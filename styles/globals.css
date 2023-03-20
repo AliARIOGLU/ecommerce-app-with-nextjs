@@ -10,4 +10,8 @@
   .bottomNavLi {
     @apply hover:underline underline-offset-2 cursor-pointer decoration-[1px] duration-200;
   }
+
+  .footerLiItem {
+    @apply hover:text-white duration-200 ml-2 cursor-pointer;
+  }
 }

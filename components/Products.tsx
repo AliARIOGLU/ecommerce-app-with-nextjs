@@ -1,5 +1,6 @@
 import { Item } from "@/type";
 import React from "react";
+import { Toaster } from "react-hot-toast";
 import SingleProduct from "./SingleProduct";
 
 const Products = ({ productData }: any) => {
@@ -8,6 +9,17 @@ const Products = ({ productData }: any) => {
       {productData.map((product: Item) => (
         <SingleProduct product={product} key={product._id} />
       ))}
+      <Toaster
+        reverseOrder={false}
+        position="top-center"
+        toastOptions={{
+          style: {
+            borderRadius: "8px",
+            background: "#333",
+            color: "#fff",
+          },
+        }}
+      />
     </div>
   );
 };
